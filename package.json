@@ -1,0 +1,30 @@
+{
+  "name": "shri1",
+  "version": "1.0.0",
+  "description": "Home work for shri",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "author": "Sergey Ignashin (ru.ignashin@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "multer": "^1.4.3",
+    "prettier": "^2.3.0"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write",
+    "*.js": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "backrem": "^1.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  }
+}
